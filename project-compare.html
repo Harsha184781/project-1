@@ -13,6 +13,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <style>
 
+.le{
+        font-size:14px; 
+        margin-bottom:10px;
+         font-weight:500;
+         
+      }
+
+      .le:hover{
+        color:#1ea68b;
+        margin-left:4px;
+        
+      }
+
+      .bo:hover{
+        background-color: #1ea68b;
+
+      }
+
+      .bo{
+        height:38px; 
+        width:110px;
+         border-top-right-radius:5px; 
+         border-bottom-right-radius:5px; 
+         border-width:0px; 
+         background-color:black; 
+          align-items:center;
+          
+      }
+
         .ha {
 
             text-decoration:none;
@@ -47,12 +76,34 @@
 
           }
 
+          .bab{
+
+            background-color: #1ea68b;
+             color:white;
+              font-weight:600;
+               height:40px;
+                width:110px; 
+                font-size:12px; 
+                border-width:0px;
+                 border-radius:5px;
+          }
+
+          .bab:hover{
+            background-color:white;
+            color:#1ea68b;
+            border:1px solid #1ea68b;
+          }
+
+          .com:hover{
+            color:red;
+          }
          
     
 </style>
   </head>
 
   <body>
+    <div id="sectioncompare">
     <div class="container-fluid">
         <div class="row">
     
@@ -63,14 +114,14 @@
                         <img style="padding-left:100px; height:60px;"  src="./images/img/logo.png"/>
                     </nav>
                     <div style="display:flex; justify-content:space-evenly; align-items:center; width:35vw;">
-                       <a class="ha" href="" >Home</a>
-                       <a class="ha" href="" >Shop</a>
-                       <a class="ha" href="" >My <br> Account</a>
-                       <a class="ha" href="" >Compare</a>
+                       <a class="ha" href="./project-login.html" >Home</a>
+                       <a class="ha" href="./project-shop.html" >Shop</a>
+                       <a class="ha" href="./project-account.html" >My <br> Account</a>
+                       <a style="text-decoration:none;color:#1ea68b;font-weight:bold;" href="./project-compare.html" >Compare</a>
                       
                     </div>
                     <div>
-                      <a href="" class="ha">Login</a>
+                      <a href="./project-login.html" class="ha">Login</a>
                       <input  style="width:350px; height:40px; padding:10px;" type="text-box display:flex justify-content:space-between" placeholder="Seach For Items...                                         🔍">
                       <img   class="m-3" style="width:20px; " src="./images/img/icon-heart.svg">
                       <img   style="width:20px;" src="./images/img/icon-cart.svg">
@@ -181,20 +232,20 @@
 
                       <tr>
                         <td  class="aa">Buy</td>
-                        <td style="padding:5px;"><button style="background-color: #1ea68b; color:white; font-weight:600; height:40px; width:110px; font-size:12px; border-width:0px; border-radius:5px;">Add to Cart</button></td> 
-                        <td style="padding:5px;"><button style="background-color: #1ea68b; color:white; font-weight:600; height:40px; width:110px; font-size:12px; border-width:0px; border-radius:5px;">Add to Cart</button></td> 
-                        <td style="padding:5px;"><button style="background-color: #1ea68b; color:white; font-weight:600; height:40px; width:110px; font-size:12px; border-width:0px; border-radius:5px;">Add to Cart</button></td> 
+                        <td style="padding:5px;"><button class="bab">Add to Cart</button></td> 
+                        <td style="padding:5px;"><button class="bab">Add to Cart</button></td> 
+                        <td style="padding:5px;"><button class="bab">Add to Cart</button></td> 
                       </tr>
 
                       <tr>
                         <td style="padding:5px;" class="aa">Remove</td>
-                        <td style="padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                        <td style="padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 com" viewBox="0 0 16 16">
                             <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                           </svg></td> 
-                        <td style="padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                        <td style="padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 com" viewBox="0 0 16 16">
                             <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                           </svg></td> 
-                        <td style="padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                        <td style="padding:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 com" viewBox="0 0 16 16">
                             <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
                           </svg></td>
                           
@@ -208,30 +259,30 @@
         </div>
 
       
-<div class="col-12">
-    <div class="d-flex  align-items-center justify-content-around " style=" margin-top:70px; height:80px; background-color:#1ea68b">
-    
-      <div class="d-flex">
-      <img  style="width:40px;" src="./images/img/icon-email.svg">
-      <p style="font-weight:600; margin-top:10px;">Sign in to Newsletter</p>
-      </div>
-    
-      <div>
-        <p style="font-size:15px; font-weight:600; margin-top:14px;">...and receive $25 coupon for first shopping.</p>
-      </div>
-    
-      <div class="d-flex">
-      <div style="height:38px; width:220px; border-top-left-radius:5px; border-bottom-left-radius:5px; border-width:0px; background-color:white;  align-items:center;">
-        <p style="margin:10px; font-size:12px; color:grey;">Enter Your Email</p>
-      </div>
-      <div style="height:38px; width:110px; border-top-right-radius:5px; border-bottom-right-radius:5px; border-width:0px; background-color:black;  align-items:center;">
-       <p style="margin:10px; text-align:center; font-size:12px; color:white;">Subscribe</p>
-      </div>
-    </div>
-    
-    </div>
-    
-    </div>
+        <div class="col-12">
+          <div class="d-flex  align-items-center justify-content-around " style=" margin-top:70px; height:80px; background-color:#87c2b6">
+          
+            <div class="d-flex">
+            <img  style="width:40px;" src="./images/img/icon-email.svg">
+            <p style="font-weight:600; margin-top:10px;">Sign in to Newsletter</p>
+            </div>
+          
+            <div>
+              <p style="font-size:15px; font-weight:600; margin-top:14px;">...and receive $25 coupon for first shopping.</p>
+            </div>
+          
+            <div class="d-flex">
+            <div>
+              <input type="text" style="height:38px; width:220px; border-top-left-radius:5px; border-bottom-left-radius:5px; border-width:0px; align-items:center; font-size:12px; color:grey; padding-left:15px; margin:0px;" placeholder="Enter Your Email"></input>
+            </div>
+            <div  class="bo">
+             <p   style="margin:10px; text-align:center; font-size:12px; color:white;">Subscribe</p>
+            </div>
+          </div>
+          
+          </div>
+          
+          </div>
     
     
     <div class="col-4">
@@ -239,8 +290,8 @@
         <img style="width:140px;" src="./images/img/logo.png"/>
       </div>
       <div style="margin:0px 0px 20px 70px;;">
-          <p style="color:grey; font-size:14px;  font-weight:600;">Contact</p>
-          <div>
+          <p style="color:grey; font-size:14px; margin-bottom:8px;  font-weight:600;">Contact</p>
+          <div style="margin-top:0px;">
           <p style="margin:2px;"><span  style="font-weight:600;">Address:</span> 13 Tlemcen Road, Street 32, Beb-Wahren</p>
           <p style="margin:2px;"><span style="font-weight:600;">Phone:</span>+01 2222 365/(+91)01 2345 6789</p>
           <p style="margin:2px;"> <span style="font-weight:600;">Hours:</span>10:00 - 18:00, Mon - Sat</p>
@@ -260,12 +311,12 @@
     <div class="col-2">
      <div style="margin-left:10px;">
       <p style=" margin:60px 0px 15px 0px; font-weight:700; font-size:18px;">Address</p>
-      <p style="font-size:14px; margin-bottom:10px; font-weight:500;">About Us</p>
-      <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Delivery Information</p>
-      <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Privacy Policy</p>
-      <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Terms and Conditions</p>
-      <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Contact Us</p>
-      <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Support Center</p>
+      <p class="le">About Us</p>
+      <p class="le">Delivery Information</p>
+      <p class="le">Privacy Policy</p>
+      <p class="le">Terms and Conditions</p>
+      <p class="le">Contact Us</p>
+      <p class="le">Support Center</p>
      </div>
     
     </div>
@@ -273,12 +324,12 @@
     <div class="col-2">
       <div style="margin-left:10px;">
         <p style=" margin:60px 0px 15px 0px; font-weight:700; font-size:18px;">My Account</p>
-        <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Sign In</p>
-        <p style="font-size:14px; margin-bottom:10px; font-weight:500;">View Cart</p>
-        <p style="font-size:14px; margin-bottom:10px; font-weight:500;">My Wishlist</p>
-        <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Track My Order</p>
-        <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Help</p>
-        <p style="font-size:14px; margin-bottom:10px; font-weight:500;">Order</p>
+        <p class="le">Sign In</p>
+        <p class="le">View Cart</p>
+        <p class="le">My Wishlist</p>
+        <p class="le">Track My Order</p>
+        <p class="le">Help</p>
+        <p class="le">Order</p>
        </div>
     
     </div>
@@ -322,7 +373,7 @@
 
 
         
-
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
